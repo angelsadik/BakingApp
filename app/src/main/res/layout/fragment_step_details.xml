@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragments.StepDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/step_exoplayer"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/step_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/cooking"
+        android:layout_marginTop="14dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/step_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        tools:text="step full description"/>
+
+
+</LinearLayout>
+</ScrollView>
